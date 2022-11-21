@@ -1,0 +1,56 @@
+* {
+  border-radius: 10px;
+}
+
+body {
+  background-image: linear-gradient(#561d57, #db89ba, #fdd5ed);
+  min-height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+
+img {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  left: 50px;
+  top: -50px;
+  transition: all 1s;
+}
+section {
+  background-color: #ffff;
+  height: 300px;
+  width: 400px;
+  margin: 200px auto 0 auto;
+
+  position: relative;
+
+  transition: all 1s;
+}
+section:hover {
+  height: 400px;
+}
+.container {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: all 1s;
+}
+section:hover .container {
+  opacity: 1;
+}
+section:hover img {
+  top: -100px;
+  border-radius: 50%;
+  transform: rotate(360deg);
+}
+/* @media screen and(min-width: 740px){
+    .section{
+        float: none;
+        width: 100px;
+    }
+} */

@@ -1,0 +1,117 @@
+* {
+ margin: 0;
+padding: 0;
+
+
+}
+header{
+    height: 70px;
+    background-color: #2f948d;
+    color:#fff;
+    margin-bottom: 10px;
+}
+/* menu bar*/
+ .secound-bar{
+    display: none;
+} 
+@media screen and (max-width:700px) {
+    .secound-bar{
+        display: block;
+    }
+     .main-bar{
+        display: none;
+    } 
+}
+li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+li::before{
+    content: "1";
+    counter-increment: counter;
+    content: counter(counter);
+    padding: 0.1rem 0.45rem;
+    background-color: #015d56;
+    color: #fff;
+    margin: 0.5rem;
+  
+    border-radius: 2px;
+    font-size: 1.2rem;
+}
+
+ol{
+    counter-reset: counter;
+}
+
+/* ol li:first-child::before{
+    content: "1";
+} */
+
+
+
+h1{
+    color :aqua;
+}
+/* body{
+    background-color: #262626;
+} */
+
+
+.container{
+    padding: 10px;
+     display:flex; 
+   border: 3px solid red;
+   justify-content: center;
+    list-style: none;
+   background-color: #2f948d;
+}
+
+
+ .c1, .c2, .c3{
+padding: 10px 20px;
+font-size: 10px;
+color:#fff;
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.c3:hover{
+    background-color:#015d56;
+    transition: 0.9s;
+}
+.c2:hover  {  background-color: #015d56;
+    transition: 0.9s;
+}
+.c1:hover{
+    background-color: #015d56;
+    transition: 0.9s;
+}
+@media(max-width:780px){
+    .container{
+     height: 230px;
+     flex-direction: column;
+     text-align: center;
+    }
+}
+.S1::after{
+ 
+text-align: left;
+ background-color: rgb(196, 6, 6); 
+
+content: "Diala Kul";
+}
+img{
+    width: 80%;
+    padding: 20px;
+    height: 500px
+   
+
+}
+.bc{
+    background-color: red;
+}
+.first{
+    color:blue;
+    font-size: large;
+}
+#secound{
+    color: yellow;
+}

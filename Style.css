@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+}
+.main-image{
+    width: 100%;
+    opacity: 1.8;
+
+} 
+button{
+  top: 40px;
+    position: fixed;
+    background-color: transparent;
+    color: azure;
+    height: 40px;
+    border: 1px solid #ffff;
+    font-size: 20px;
+
+    animation: myMove 4s infinite;
+}
+@keyframes myMove{
+    0%   {border-radius: 5px; padding: 5px 20px;}
+    50%   {border-radius: 20px; padding: 3px 5px;}
+   
+    100% {border-radius:5px; padding: 5px 20px;}
+
+}
+
+.btn1{
+left: 30px;
+}
+.btn2{
+right: 30px;
+}
+h1{
+    position: fixed;
+    top:50%;
+width: 100%;
+text-align: center;
+     color: aliceblue;
+     font-size: 50px;
+     font-family: 'Courier New', Courier, monospace;
+     animation : mymove 3s infinite;
+}
+@keyframes mymove {
+    0%   {transform: translate(0, 0);}
+  
+    50%  {transform: translate(0, 20px);}
+    100% {transform: translate(0, 0);}
+    }
+    .bubbles{
+       display: flex;
+     justify-content: space-around;
+     position: fixed;
+     bottom:0;
+     width: 100%;
+   
+    }
+   
+    @keyframes bubble{
+        0%   {transform: translate(0, 0);}
+  
+        100% {transform: translate(0, -700px);}
+        }
+        .img1{
+            width: 50px;
+            height: 50px;
+            animation:  bubble 7s infinite linear;
+        }
+        .img2{
+            width: 36px;
+            height: 30px;
+            animation:  bubble 3.5s infinite linear;
+        }
+        .img7{
+            width: 60px;
+            height: 80px;
+            animation:  bubble 3.5s infinite linear;
+        }
+        .img3{
+            width: 40px;
+            height: 36px;
+            animation:  bubble 5s infinite linear;
+        }
+        .img4{
+            width: 80px;
+            height: 130px;
+            animation:  bubble 7s infinite linear;
+        }
+        .img5{
+            width: 70px;
+            height: 140px;
+            animation:  bubble 3s infinite linear;
+        }
+        .img6{
+            width: 40px;
+            height: 40px;
+            animation:  bubble 4s infinite linear;
+        }
